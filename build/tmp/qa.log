@@ -1,0 +1,11 @@
+hello-0.1: hello: The LIC_FILES_CHKSUM does not match for file://COPYING;md5=12f884d2ae1ff87c09e5b7ccc2c4ca7e
+hello: The new md5 checksum is d41d8cd98f00b204e9800998ecf8427e
+hello: Here is the selected license text:
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+hello: Check if the license information has changed in /home/sai/rpi/build/tmp/work/raspberrypi3_64-poky-linux/hello/0.1-r0/COPYING to verify that the LICENSE value "GPLv2" remains valid [license-checksum]
+chardrv-1.0.0: chardrv: LIC_FILES_CHKSUM points to an invalid file: /home/sai/rpi/build/tmp/work/raspberrypi3_64-poky-linux/chardrv/1.0.0-r0/COPYING [license-checksum]
+chardrv-1.0.0: chardrv: Files/directories were installed but not shipped in any package:
+  /usr/bin/char_user
+Please set FILES such that these items are packaged. Alternatively if they are unneeded, avoid installing them or delete them within do_install.
+chardrv: 1 installed and not shipped files. [installed-vs-shipped]
