@@ -4,6 +4,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <unistd.h>
+
 int main()
 {
     int fd;
@@ -19,7 +20,7 @@ int main()
     printf("Written %d bytes to driver\n", ret);
 
     ret = read(fd , readbuf , 5);
-    readbuf[ret] = '\n';
+    readbuf[ret] = '\0';
     
     printf("Read from the read buffer: %s\n",readbuf);
     close(fd);

@@ -1,8 +1,8 @@
 #Package Summary
-SUMMARY = "Character device driver"
+SUMMARY = ""
 
 # Decription about the receipe
-DESCRIPTION = "Basic example for testing character driver with RPI"
+DESCRIPTION = "Basic character driver"
 
 # License, for example GPLv2
 LICENSE = "GPLv2"
@@ -12,22 +12,11 @@ inherit module
 
 # Source files
 SRC_URI = "file://chardrv_mod.c \
+           file://chardrv_wq_mod.c \
+           file://chardrv_poll_mod.c \
+           file://chardrv_asyncio_mod.c \
            file://Makefile \
            file://COPYING \
           "
 
 S = "${WORKDIR}"
-
-# Pass arguments to linker
-#TARGET_CC_ARCH += "${LDFLAGS}"
-
-# Cross-compile source code
-#do_compile() {
-#    ${CC} -o char_user char_user.c
-#}
-
-# Create /usr/bin in rootfs and copy program to it
-#do_install() {
-#    install -d ${D}${bindir}
-#    install -m 0755 char_user ${D}${bindir}
-#}

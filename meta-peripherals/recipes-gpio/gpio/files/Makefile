@@ -1,4 +1,4 @@
-obj-m += chardrv_mod.o chardrv_wq_mod.o chardrv_poll_mod.o chardrv_asyncio_mod.o
+obj-m += gpio_drv.o
 
 SRC := $(shell pwd)
 
